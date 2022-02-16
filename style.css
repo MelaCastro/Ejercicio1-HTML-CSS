@@ -1,54 +1,63 @@
 
 body {
-  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%) fixed;
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  background: #F2F2F2;
+  /* background-image: url("images/Group 8.png"); */
 }
-  
+
 /* Container */
 .container {
-  display: grid;
-  max-width: 1180px;
-  left: 0px;
-  top: 11px;
-  border-radius: 0px;
-  grid-gap: 31px;
-  margin: 30px 135px;
-  grid-template-columns: repeat(12, 70px);
-  box-sizing:border-box;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  max-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: aqua;
+}
 
+.banner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* Navegation */
-nav{   
-  grid-column-start: 1;
-  grid-column-end: -1;
-  top: 100%;
+nav{
+  background-color: blueviolet;
+  display: flex;
+  margin-top: 30px;
+  align-items: baseline;
+  flex-basis: 100%;
+  justify-content: space-between;
 }
 .nav__logo{
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  height: 40%;
-  width: 120%;
-  left: 135px;
+  height: 48px; 
   top: 30px;
   font-size: 40px;
   color: #FFFFFF;
-  margin-right: 256px; 
-  border-radius: nullpx;
 }
-.nav__ul{  
-  display: inline-block;
+
+ .nav__ul{  
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  text-align: center;
   color: #FFFFFF;
-  margin-right:250px;
-  word-spacing: 12px;
+  margin-bottom: 0;
 }
 .nav__li{
-  display: inline-block;
+  display: block;
+  margin-left: 24px;
   text-decoration: none;
 }
 
@@ -65,20 +74,17 @@ nav{
 }
  
 button{
-  border: 1px solid (255, 255, 255, 0.295063);
   box-sizing: border-box;
   border-radius:24px; 
+  border: 1px solid rgba(255, 255, 255, 0.2951);
   background-color: transparent;
   height: 48px;
   width: 170px;
-  left: 1135px;
-  top: 30px;
 
   /* Text */
   font-family: Source Sans Pro;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
   line-height: 24px;
   letter-spacing: 0px;
   text-align: center;
@@ -87,18 +93,16 @@ button{
 
 /* Text Principal */
 .text{
-  grid-column-start: 1;
-  grid-column-end: 4;
-  margin-top: 20px;
-  width: 50%;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .text__h1{
   height: 144px;
   width: 336px;
   left: 135px;
-  border-radius: nullpx;
-  
+  margin-top: 120px;
+  margin-bottom: 26px;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
@@ -121,58 +125,38 @@ button{
 }
 
 /* Svg  */
-.img{
-  grid-column-start: 5;
-  grid-column-end: -1;
+ .img{
+  background-color: blue;
+  display: flex;
   margin-top: 3%;
-  left: 641.81%;
-  right: 9.27%;
-  top: 2.31%;
-  bottom: 84.82%;
+  max-width: 754.48px;
+  height: 790.52px;
   border-radius: 0px 
-}
-
-.redes__iconf{
+}  
+.redes{
   position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.redes--icon{
   height: 32px;
   width: 32px;
-  left: 1143px;
-  top: 688px;
   border-radius: 0px;
 }
-
-.redes__icont{
-  position: absolute;
-  height: 32px;
-  width: 32px;
-  left: 1181px;
-  top: 688px;
-  border-radius: 0px;
-}
-
-.redes__iconi{
-  position: absolute;
-  height: 32px;
-  width: 32px;
-  left:1218px;
-  top: 688px;
-  border-radius: 0px;
-}
-.menu__m{
+.menu{
   display: none;
-}
+} 
 
  /* Medium devices */
-@media screen and (max-width: 767.98px){
+ /* @media screen and (max-width: 767.98px){
   .container {
-    display: grid;
-    max-width: 980px;
-    grid-gap: 25px;
-    margin: 19px 15px;
-    grid-template-columns: repeat(12, 34px);
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin-left: 10%;
+    flex-wrap: wrap;
   }
   .text{
-    grid-column: 1/ -1;
     width: 100%;
     margin-bottom: 1px;
   } 
@@ -189,10 +173,6 @@ button{
     width: 70%;
     left: 14px;
     margin-top: 10%;  
-  }
-
-  .img{
-    grid-column: 1/ -1;
   }    
 
   .redes__iconf{
@@ -230,10 +210,10 @@ button{
     width: 30px;  
   }
     
-}
+} */
 
 /* Small devices */
-@media screen and (max-width: 575.98px){
+/* @media screen and (max-width: 575.98px){
   body{
     margin: 0%;   
   }
@@ -299,4 +279,4 @@ button{
     margin-left: 20px;
   }
 
-}
+}  */
