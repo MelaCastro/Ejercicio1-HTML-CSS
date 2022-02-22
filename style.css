@@ -4,24 +4,29 @@ body {
   margin: 0;
   box-sizing:border-box;
   background: #F2F2F2;
-  /* background-image: url("images/Group 8.png"); */
 }
 
 /* Container */
 .container {
-  display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  max-height: 100vh;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
 }
-
 .banner{
   display: flex;
   justify-content: space-between;
+  height: 768px;
   flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  background: url(images/Group8.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+}
+.banner__container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex:1;
 }
 
 /* Navegation */
@@ -95,9 +100,9 @@ button, .button{
   background-color: #C86DD7;
   transition: .6s;
 }
-/* Text Principal */
+/* wrapper-title */
 .banner__wrapper-title{
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -140,13 +145,15 @@ button, .button{
   position: absolute;
   bottom: 0;
   right: 0;
+  left: 84%;
+  top: 90%;
 }
 .social-media__icon{
   height: 32px;
   width: 32px;
   margin-bottom: 48px;
   border-radius: 0px;
-}
+} 
 
  /* Medium devices */
 @media screen and (max-width: 767.98px){
