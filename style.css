@@ -16,7 +16,6 @@ body {
   height: 100%;
   overflow: hidden;
   position: relative;
-  background-color: aqua;
 }
 
 .banner{
@@ -26,25 +25,24 @@ body {
 }
 
 /* Navegation */
-nav{
-  background-color: blueviolet;
+.banner__nav{
   display: flex;
   margin-top: 30px;
   align-items: baseline;
   flex-basis: 100%;
   justify-content: space-between;
+  background-color: #deb887;
 }
-.nav__logo{
+.banner__logo{
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  height: 48px; 
-  top: 30px;
+  height: 48px;
   font-size: 40px;
   color: #FFFFFF;
 }
 
- .nav__ul{  
+ .banner__menu{  
   display: flex;
   padding: 0;
   justify-content: space-between;
@@ -55,12 +53,14 @@ nav{
   color: #FFFFFF;
   margin-bottom: 0;
 }
-.nav__li{
+.menu__content{
   display: block;
   margin-left: 24px;
   text-decoration: none;
 }
-
+.banner__icon-menu{
+  display: none;
+} 
 /* Buttons */
 .button--yellow{
   left: 135px;
@@ -126,7 +126,6 @@ button{
 
 /* Svg  */
  .img{
-  background-color: blue;
   display: flex;
   margin-top: 3%;
   max-width: 754.48px;
@@ -143,9 +142,6 @@ button{
   width: 32px;
   border-radius: 0px;
 }
-.menu{
-  display: none;
-} 
 
  /* Medium devices */
  /* @media screen and (max-width: 767.98px){
