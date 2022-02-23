@@ -16,6 +16,7 @@ body {
   height: 100%;
   overflow: hidden;
   position: relative;
+  background-color: thistle;
 }
 
 .banner{
@@ -147,69 +148,48 @@ button, .button{
 }
 
  /* Medium devices */
- /* @media screen and (max-width: 767.98px){
-  .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 80%;
-    margin-left: 10%;
-    flex-wrap: wrap;
-  }
-  .text{
-    width: 100%;
-    margin-bottom: 1px;
-  } 
-
-  .text__h1{
-    height: 20px;
-    width: 100%;
-    left: 14px;
-    top: 20px;              
-  }
-
-  .text__p{
-    height: 96px;
-    width: 70%;
-    left: 14px;
-    margin-top: 10%;  
-  }    
-
-  .redes__iconf{
-    left: 181px;
-    top: 1094px;   
-    border-radius: 0px;
-  }
-
-  .redes__icont{
-    left: 220px;
-    top: 1094px;
-    border-radius: 0px;
-  }
-
-  .redes__iconi{
-    left: 258px;
-    top: 1094px;
-    border-radius: 0px;
-  }
-
-  .nav__ul{
-    display: none;
-  } 
-
-  #none{
-    display: none;
-  }
-
-  .menu__m{    
-    display:block;
-    position: absolute;
-    left: 90.67%;
-    right: 4%;
-    top: 3.5%;  
-    width: 30px;  
-  }
-    
-} */
+  @media screen and (max-width: 767.98px){
+    .container{
+      width: 100%;
+      height: 900px;
+      max-height:100% ;
+    }
+    .banner__logo{
+      color: #000000;
+      margin: 20px;
+    }
+    .banner__nav{
+      align-items: center;
+      background-color:#ffffff;
+      max-height: 90px;
+    }
+    .banner__icon-menu{
+      display: flex;
+      margin-right: 15px;
+      height: 20px;
+    }
+    .banner__menu, .button{
+      display: none;
+    }
+    .text__h1{
+      width: 100%;
+      height: 70px;
+      margin-top:23px;
+    }
+    .text__p{
+      width: 420px;
+    }
+    .img{
+      margin-top: 0;
+      margin-left: 100px;
+      height: 762.71px;
+      border-radius: 0px;
+    }
+    .redes{
+      right: 40%;
+      margin-bottom: 30px;
+    }
+}
 
 /* Small devices */
 /* @media screen and (max-width: 575.98px){
