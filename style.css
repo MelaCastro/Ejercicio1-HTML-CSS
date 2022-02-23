@@ -30,7 +30,6 @@ body {
   align-items: baseline;
   flex-basis: 100%;
   justify-content: space-between;
-  background-color: #deb887;
 }
 .banner__logo{
   font-family: Poppins;
@@ -49,12 +48,13 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  color: #FFFFFF;
   margin-bottom: 0;
+  list-style: none;
 }
-.menu__content{
-  display: block;
-  margin-left: 24px;
+.menu__item{
+  display: flex;
+  color: #FFFFFF;
+  margin-right: 30px;
   text-decoration: none;
 }
 .banner__icon-menu{
@@ -72,7 +72,11 @@ body {
   border-radius: 24px;
 }
  
-button{
+button, .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   box-sizing: border-box;
   border-radius:24px; 
   border: 1px solid rgba(255, 255, 255, 0.2951);
@@ -84,12 +88,12 @@ button{
   font-family: Source Sans Pro;
   font-size: 16px;
   font-style: normal;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: center;
   color: #FFFFFF;
 }
-
+.button:hover{
+  background-color: #C86DD7;
+  transition: .6s;
+}
 /* Text Principal */
 .text{
   display: inline-flex;
