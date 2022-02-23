@@ -16,7 +16,6 @@ body {
   height: 100%;
   overflow: hidden;
   position: relative;
-  background-color: thistle;
 }
 
 .banner{
@@ -166,11 +165,15 @@ button, .button{
     }
     .banner__icon-menu{
       display: flex;
+      cursor: pointer;
       margin-right: 15px;
       height: 20px;
     }
     .banner__menu, .button{
       display: none;
+    }
+    .banner__wrapper-title{
+      margin-left: 14px;
     }
     .banner__title{
       width: 100%;
