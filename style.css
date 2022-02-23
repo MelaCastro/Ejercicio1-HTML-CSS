@@ -136,19 +136,20 @@ button, .button{
   height: 790.52px;
   border-radius: 0px 
 }  
-.redes{
+.banner__social-media{
   position: absolute;
   bottom: 0;
   right: 0;
 }
-.redes--icon{
+.social-media__icon{
   height: 32px;
   width: 32px;
+  margin-bottom: 48px;
   border-radius: 0px;
 }
 
  /* Medium devices */
-  @media screen and (max-width: 767.98px){
+@media screen and (max-width: 767.98px){
     .container{
       width: 100%;
       height: 900px;
@@ -185,77 +186,26 @@ button, .button{
       height: 762.71px;
       border-radius: 0px;
     }
-    .redes{
+    .banner__social-media{
       right: 40%;
       margin-bottom: 30px;
     }
 }
 
 /* Small devices */
-/* @media screen and (max-width: 575.98px){
-  body{
-    margin: 0%;   
-  }
-  .container {
-    display: grid;
-    width: 375px;
-    grid-gap: 13.1px;
-    grid-template-columns: repeat(12, 36px);
-    margin: 0% 0%;
-  }
-  .menu__m{    
-    position: absolute;
-    left: 90.67%;
-    right: 4%;
-    top: 3.5%;    
-  }
-  .nav{
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    height: 100%;      
-    background: #FFFFFF;
-  }
-  .nav__logo{
-    font-size: 24px;
-    line-height: 68px;       
-    color: #333333;
-    margin-left: 20px;
-  }
-  .nav__ul{
-    display: none;
-  } 
-  #none{
-    display: none;
-  }
-  .text{
-    margin-left: 20px;
-    width: 100%;
-    margin-bottom: 1px;
-    }
-  .text__h1{
+@media screen and (max-width: 575.98px){
+   .container{
+     display: flex;
+   }
+   .banner__title{
     height: 128px;
-    width: 260px;
-    left: 14px;
-    top: 87px;
-  }
+    width: 260.99px;   
+   }
+   .banner__image{
+     margin: 0;
+   }
+   .banner__social-media{
+     height: 26px;    
+   }
+}  
 
-  .text__p{
-    height: 96px;
-    width: 445px;
-    left: 14px;
-    top: 237px;        
-  }
-  .img{
-    max-width: 100%;
-    display: flex;
-    grid-column: 1/-1;
-    height: 683px;   
-    left: 30px;
-    top: 430px;
-    border-radius: 0px;
-    margin-top: 0%;
-    margin-left: 20px;
-  }
-
-}  */
