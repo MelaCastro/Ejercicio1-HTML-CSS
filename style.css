@@ -5,20 +5,20 @@ body {
   box-sizing:border-box;
   background: #F2F2F2;
 }
-
 /* Container */
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .banner{
   display: flex;
   justify-content: space-between;
-  height: 768px;
+  height: 950px;
+  max-height:100%;
   flex-wrap: wrap;
   overflow: hidden;
   position: relative;
-  background: url(images/Group8.png);
+  background: url(images/Group7.png);
   background-repeat: no-repeat;
   background-size: 100% 100%; 
 }
@@ -28,11 +28,13 @@ body {
   flex-wrap: wrap;
   flex:1;
 }
-
 /* Navegation */
 .banner__nav{
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  background-color:#ffffff;
+  padding: 16px 15px;
+  max-height: 20px;
   flex-basis: 100%;
   justify-content: space-between;
 }
@@ -40,44 +42,12 @@ body {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  line-height: 48px;
-  font-size: 40px;
-  color: #FFFFFF;
-}
-
- .banner__menu{  
-  display: flex;
-  padding: 0;
-  justify-content: space-between;
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  margin-bottom: 0;
-  list-style: none;
+  font-size: 24px;
+  line-height: 32px; 
+  color: #000000;
   margin: 0;
+  height: 27px;
 }
-.menu__item{
-  display: flex;
-  color: #FFFFFF;
-  margin-right: 30px;
-  text-decoration: none;
-}
-.banner__icon-menu{
-  display: none;
-} 
-/* Buttons */
-.button__button--yellow{
-  left: 135px;
-  top: 528px;
-  border-radius: 0px;
-  border-color: #FFC300;
-  right: 0%;
-  bottom: 0%; 
-  background: #FFC300;
-  border-radius: 24px;
-}
- 
 button, .button{
   display: flex;
   justify-content: center;
@@ -96,35 +66,44 @@ button, .button{
   font-style: normal;
   color: #FFFFFF;
 }
-.button:hover{
-  background-color: #C86DD7;
-  transition: .6s;
+.button__button--yellow{
+  left: 135px;
+  top: 528px;
+  border-radius: 0px;
+  border-color: #FFC300;
+  right: 0%;
+  bottom: 0%; 
+  background: #FFC300;
+  border-radius: 24px;
+}
+.banner__icon-menu{
+  display: flex;
+  cursor: pointer;
+  height: 15px;
 }
 /* wrapper-title */
 .banner__wrapper-title{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  margin-left: 14px;
 }
-
 .banner__title{
-  height: 144px;
-  width: 336px;
+  width: 100%;
   left: 135px;
-  margin-top: 120px;
-  margin-bottom: 26px;
+  margin-top: 23px;
+  margin-bottom: 0;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 72px;
-  line-height: 72px;
+  font-size: 56px;
+  line-height: 64px;
   color: #FFFFFF;
 }
-
 .banner__quote{
   height: 96px;
-  width: 370px;
-  left: 135px;  
-  border-radius: nullpx;     
+  width: 80%;
+  left: 135px;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
@@ -132,92 +111,120 @@ button, .button{
   line-height: 24px;
   color: #FFFFFF;
 }
-
-/* Svg  */
- .banner__image{
-  display: flex;
-  margin-top: 3%;
-  max-width: 754.48px;
-  height: 790.52px;
-  border-radius: 0px 
-}  
+.image__mobile{
+  width: 117%;
+  max-width: 620px;
+  height: 100%;
+} 
 .banner__social-media{
   position: absolute;
   bottom: 0;
-  right: 0;
-  left: 84%;
-  top: 90%;
+  right: 40%;
 }
 .social-media__icon{
-  height: 32px;
-  width: 32px;
   margin-bottom: 48px;
-  border-radius: 0px;
-} 
-
- /* Medium devices */
-@media screen and (max-width: 767.98px){
-  .container{
-    width: 100%;
-    height: 900px;
-    max-height:100%;
+}
+.banner__menu, .button, .banner__image-desktop{
+  display: none;
+}
+/* Medium devices */
+@media screen and (min-width: 768px){
+  .image__mobile{
+    max-width: 754px;
   }
-  .banner__logo{
-    color: #000000;
-    margin: 0;
+}
+/* large devices */
+@media (min-width: 1200px){
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .banner{
+    height: 768px;
+    background: url(images/Group8.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+  }
+  .banner__container{
+    padding-top: 30px;
   }
   .banner__nav{
-    align-items: center;
-    background-color:#ffffff;
-    max-height: 90px;
-    padding: 16px 15px;
+    background-color: transparent;
+  }
+  .banner__logo{
+    line-height: 48px;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  .banner__menu{  
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0;
+    list-style: none;
+    margin: 0;
+  }
+  .menu__item{
+    display: flex;
+    color: #FFFFFF;
+    margin-right: 30px;
+    text-decoration: none;
   }
   .banner__icon-menu{
-    display: flex;
-    cursor: pointer;
-    margin-right: 15px;
-    height: 20px;
-  }
-  .banner__menu, .button{
     display: none;
   }
-  .banner__wrapper-title{
-    margin-left: 14px;
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius:24px; 
+    border: 1px solid rgba(255, 255, 255, 0.2951);
+    background-color: transparent;
+    height: 48px;
+    width: 170px;
+  
+    /* Text */
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    color: #FFFFFF;
+  }
+  .button:hover{
+    background-color: #C86DD7;
+    transition: .6s;
   }
   .banner__title{
-    width: 100%;
-    height: 70px;
-    margin-top:23px;
+    width: 336px;
+    margin-top: 120px;
+    margin-bottom: 26px;
+    font-size: 72px;
+    line-height: 72px;
   }
   .banner__quote{
-    width: 420px;
+    width: 370px;
+  }
+  .banner__image-desktop{
+    display: flex;
+    margin-top: 3%;
+    max-width: 754.48px;
+    height: 790.52px;
+    border-radius: 0px 
   }
   .banner__image{
-    margin-top: 0;
-    margin-left: 100px;
-    height: 762.71px;
-    border-radius: 0px;
+    display: none;
   }
   .banner__social-media{
-    right: 40%;
-    margin-bottom: 30px;
+    right: 9%;
   }
 }
 
-/* Small devices */
-@media screen and (max-width: 575.98px){
-  .container{
-    display: flex;
-  }
-  .banner__title{
-    height: 128px;
-    width: 260.99px;   
-  }
-  .banner__image{
-    margin: 0;
-  }
-  .banner__social-media{
-    height: 26px;    
-  }
-}  
+
+ 
 
