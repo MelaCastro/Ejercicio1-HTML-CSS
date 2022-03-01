@@ -203,6 +203,16 @@ body {
 .services__image{
   padding-top: 32px;
 }
+/* contact */
+.contact{
+  width: 100%;
+  background: #FFFFFF;
+}
+.contact__container{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
 /* Medium devices */
 @media screen and (min-width: 768px){
   .image__mobile{
