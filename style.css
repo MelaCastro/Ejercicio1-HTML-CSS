@@ -462,6 +462,7 @@ body {
   }
   .contact__quote{
     display: inline-flex;
+    max-width: 570px;
   }
   .contact__input{
     margin-right: 30px;
