@@ -13,7 +13,7 @@ body {
 .banner{
   display: flex;
   justify-content: space-between;
-  height: 950px;
+  height: 752px;
   max-height:100%;
   flex-wrap: wrap;
   overflow: hidden;
@@ -111,36 +111,44 @@ button, .button{
   line-height: 24px;
   color: #FFFFFF;
 }
+.banner__image{
+  display: flex;
+  flex: 1;
+}
 .image__mobile{
   width: 117%;
-  max-width: 620px;
-  height: 100%;
 } 
 .banner__social-media{
   position: absolute;
   bottom: 0;
-  right: 40%;
+  right: 100px;
+  padding-bottom: 48px;
 }
 .social-media__icon{
-  margin-bottom: 48px;
+  padding-right: 8px;
 }
-.banner__menu, .button, .banner__image-desktop{
+.banner__menu, .button{
   display: none;
 }
-/* Medium devices */
-@media screen and (min-width: 768px){
-  .image__mobile{
-    max-width: 754px;
+
+@media (min-width: 425px){
+  .banner{
+    height: 950px;
+  }
+  .banner__social-media{
+    right: 0;
   }
 }
 /* large devices */
-@media (min-width: 1200px){
+@media (min-width: 1024px){
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
   }
   .banner{
-    height: 768px;
+    height: 808px;
     background: url(images/Group8.png);
     background-repeat: no-repeat;
     background-size: 100% 100%; 
@@ -150,6 +158,8 @@ button, .button{
   }
   .banner__nav{
     background-color: transparent;
+    padding: 0;
+    max-height: 48px;
   }
   .banner__logo{
     height: 31px;
@@ -201,6 +211,10 @@ button, .button{
     background-color: #C86DD7;
     transition: .6s;
   }
+  .banner__wrapper-title{
+    max-width: 370px;
+    height: 500px;
+  }
   .banner__title{
     width: 336px;
     margin-top: 120px;
@@ -208,24 +222,17 @@ button, .button{
     font-size: 72px;
     line-height: 72px;
   }
-  .banner__quote{
-    width: 370px;
-  }
-  .banner__image-desktop{
-    display: flex;
-    margin-top: 3%;
-    max-width: 754.48px;
-    height: 790.52px;
-    border-radius: 0px 
-  }
   .banner__image{
-    display: none;
+    display: flex;
+    flex: 1;
+    margin-top: 60px;
+    width: 100%;
+  }
+  .image__mobile{
+    width: 100%;
   }
   .banner__social-media{
-    right: 9%;
+    right: 0;
+    left: auto;
   }
 }
-
-
- 
-
