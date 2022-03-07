@@ -253,8 +253,8 @@ body {
   font-family: Source Sans Pro;
   font-size: 16px;
   height: 48px;
-  width: 90%; 
-  max-width: 500px;
+  max-width: 370px;
+  width: 100%; 
   margin-bottom: 16px;
   border: 1px solid rgba(0, 0, 0, 0.116);
 }
@@ -281,7 +281,7 @@ body {
   margin-bottom: 0;
   list-style: none;
   padding-left: 14px;
-  margin-top: 30PX;
+  margin-top: 30px;
 }
 .contact-menu__item{
   text-decoration: none;
