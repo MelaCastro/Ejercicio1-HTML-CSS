@@ -162,7 +162,7 @@ body {
 }
 /* sections */
 .services__sections{
-	max-width: 500px; 
+	max-width: 370px; 
   padding: 0 26px;
 }
 .services__quote{
@@ -171,7 +171,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  max-width: 700px;
+  max-width: 570px;
 }
 .services__subtitle{
   font-family: Poppins;
@@ -203,6 +203,53 @@ body {
 .services__image{
   padding-top: 32px;
 }
+@media (min-width: 857px){
+  /* services */
+  .services__container{
+		height: 1000px;
+    display: flex;
+    align-items: center;
+  }
+  .services__wrapper-title{
+    height: 230px;
+  }
+  .services__title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .services__quote{
+    margin: 0;
+  }
+  .services__sections{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+		margin: 40px 40px;
+		padding: 0;
+  }
+  .services__section{
+    text-align: center;
+    height: 244px;
+    width: 370px;
+  }
+  .services__image, .services__image-consequuntur{
+    padding-top: 40px;
+  }
+  .services__description{
+    width: 322px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1190px){
+  .services__container{
+    height: auto;
+  }
+}
+
 /* Medium devices */
 @media screen and (min-width: 425px){
   .image__mobile{
@@ -293,46 +340,6 @@ body {
     right: 0;
     left: auto;
     justify-content: flex-end;
-  }
-  /* services */
-  .services__container{
-		height: 820px;
-    display: flex;
-    align-items: center;
-  }
-  .services__wrapper-title{
-    height: 230px;
-  }
-  .services__title {
-    font-size: 56px;
-    line-height: 64px;
-  }
-  .services__quote{
-    margin: 0;
-  }
-  .services__sections{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    height: 600px;
-		margin: 0 40px;
-		padding: 0;
-  }
-  .services__section{
-    text-align: center;
-    height: 244px;
-    width: 370px;
-  }
-  .services__image, .services__image-consequuntur{
-    padding-top: 40px;
-  }
-  .services__description{
-    width: 322px;
-    height: 50px;
-    margin: 0 auto;
-    padding: 0;
   }
 
 }
