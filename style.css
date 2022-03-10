@@ -13,7 +13,6 @@ body {
 .banner{
   display: flex;
   justify-content: space-between;
-  height: 752px;
   max-height:100%;
   flex-wrap: wrap;
   overflow: hidden;
@@ -101,7 +100,6 @@ button, .button{
   color: #FFFFFF;
 }
 .banner__quote{
-  height: 96px;
   width: 80%;
   left: 135px;
   font-family: Source Sans Pro;
@@ -112,16 +110,21 @@ button, .button{
   color: #FFFFFF;
 }
 .banner__image{
+  position: relative;
+  right: 10px;
   display: flex;
+  max-width: 754px;
   flex: 1;
 }
 .image__mobile{
-  width: 117%;
+  width: 412px
 } 
 .banner__social-media{
+  width: 100%;
+  display: flex;
+  justify-content: center;
   position: absolute;
   bottom: 0;
-  right: 100px;
   padding-bottom: 48px;
 }
 .social-media__icon{
@@ -132,10 +135,10 @@ button, .button{
 }
 
 @media (min-width: 425px){
-  .banner{
-    height: 950px;
+  .image__mobile{
+    width: 100%;
   }
-  .banner__social-media{
+  .banner__image{
     right: 0;
   }
 }
@@ -234,5 +237,6 @@ button, .button{
   .banner__social-media{
     right: 0;
     left: auto;
+    justify-content: flex-end;
   }
 }
