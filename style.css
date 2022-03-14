@@ -509,10 +509,8 @@ body {
   .contact__info{
     justify-content: flex-end;
     padding: 0;
-    padding-left: 34px;
+    padding-left: 42px;
   }
-  
-
 }
 /* Medium devices */
 @media screen and (min-width: 768px){
