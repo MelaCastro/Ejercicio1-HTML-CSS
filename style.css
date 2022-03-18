@@ -47,7 +47,7 @@ body {
   margin: 0;
   height: 27px;
 }
-button, .button{
+.button{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,14 +65,12 @@ button, .button{
   font-style: normal;
   color: #FFFFFF;
 }
-.button__button--yellow{
-  left: 135px;
-  top: 528px;
+.button--yellow{
   border-radius: 0px;
   border-color: #FFC300;
   right: 0%;
   bottom: 0%; 
-  background: #FFC300;
+  background-color: #FFC300;
   border-radius: 24px;
 }
 .banner__icon-menu{
@@ -111,7 +109,7 @@ button, .button{
 }
 .banner__image{
   position: relative;
-  right: 10px;
+  left: 30px;
   display: flex;
   max-width: 754px;
   flex: 1;
@@ -126,11 +124,9 @@ button, .button{
   position: absolute;
   bottom: 0;
   padding-bottom: 48px;
+  gap: 8px;
 }
-.social-media__icon{
-  padding-right: 8px;
-}
-.banner__menu, .button{
+.banner__menu{
   display: none;
 }
 
@@ -139,7 +135,7 @@ button, .button{
     width: 100%;
   }
   .banner__image{
-    right: 0;
+    left: 0;
   }
 }
 /* large devices */
@@ -194,23 +190,8 @@ button, .button{
   }
   .button{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-sizing: border-box;
-    border-radius:24px; 
-    border: 1px solid rgba(255, 255, 255, 0.2951);
-    background-color: transparent;
-    height: 48px;
-    width: 170px;
-  
-    /* Text */
-    font-family: Source Sans Pro;
-    font-size: 16px;
-    font-style: normal;
-    color: #FFFFFF;
   }
-  .button:hover{
+  .button--hover:hover{
     background-color: #C86DD7;
     transition: .6s;
   }
