@@ -203,6 +203,10 @@ body {
   box-shadow: 10px 10px 40px 0px #00000019;
   border-radius: 3px;
 }
+.services__section:hover .services__subtitle{
+  text-underline-position: under;
+  text-decoration: underline #C86DD7 8px;
+}
 .services__image{
   padding-top: 32px;
 }
