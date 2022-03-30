@@ -109,13 +109,13 @@ body {
 }
 .banner__image{
   position: relative;
-  left: 60px;
+  left: 30px;
   display: flex;
   max-width: 754px;
   flex: 1;
 }
 .image__mobile{
-  width: 100%;
+  width: 412px;
 } 
 .banner__social-media{
   width: 100%;
@@ -209,6 +209,14 @@ body {
 }
 .services__image{
   padding-top: 32px;
+}
+@media (min-width: 425px){
+  .image__mobile{
+    width: 100%;
+  }
+  .banner__image{
+    left: 0;
+  }
 }
 @media (min-width: 857px){
   /* services */
@@ -326,10 +334,12 @@ body {
     line-height: 72px;
   }
   .banner__image{
-    left: 0;
     display: flex;
     flex: 1;
     margin-top: 60px;
+    width: 100%;
+  }
+  .image__mobile{
     width: 100%;
   }
   .banner__social-media{
