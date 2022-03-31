@@ -3,13 +3,14 @@ body {
   padding: 0;
   margin: 0;
   box-sizing:border-box;
-  background: #F2F2F2;
+  background: #FFFFFF;
 }
 /* Container */
 .container {
   max-width: 100%;
   margin: 0 auto;
 }
+
 .banner{
   display: flex;
   justify-content: space-between;
@@ -21,12 +22,14 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%; 
 }
+
 .banner__container{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex:1;
 }
+
 /* Navegation */
 .banner__nav{
   display: flex;
@@ -37,6 +40,7 @@ body {
   flex-basis: 100%;
   justify-content: space-between;
 }
+
 .banner__logo{
   font-family: Poppins;
   font-style: normal;
@@ -47,6 +51,7 @@ body {
   margin: 0;
   height: 27px;
 }
+
 .button{
   display: flex;
   justify-content: center;
@@ -65,7 +70,8 @@ body {
   font-style: normal;
   color: #FFFFFF;
 }
-.button--yellow{
+
+.button--explore{
   border-radius: 0px;
   border-color: #FFC300;
   right: 0%;
@@ -73,11 +79,13 @@ body {
   background-color: #FFC300;
   border-radius: 24px;
 }
+
 .banner__icon-menu{
   display: flex;
   cursor: pointer;
   height: 15px;
 }
+
 /* wrapper-title */
 .banner__wrapper-title{
   display: flex;
@@ -85,6 +93,7 @@ body {
   flex-direction: column;
   margin-left: 14px;
 }
+
 .banner__title{
   width: 100%;
   left: 135px;
@@ -97,6 +106,7 @@ body {
   line-height: 64px;
   color: #FFFFFF;
 }
+
 .banner__quote{
   width: 80%;
   left: 135px;
@@ -107,6 +117,7 @@ body {
   line-height: 24px;
   color: #FFFFFF;
 }
+
 .banner__image{
   position: relative;
   left: 30px;
@@ -114,9 +125,11 @@ body {
   max-width: 754px;
   flex: 1;
 }
+
 .image__mobile{
   width: 412px;
 } 
+
 .banner__social-media{
   width: 100%;
   display: flex;
@@ -125,9 +138,11 @@ body {
   bottom: 0;
   padding-bottom: 48px;
 }
+
 .social-media__icon{
   padding-right: 8px;
 }
+
 .banner__menu, .button{
   display: none;
 }
@@ -135,8 +150,8 @@ body {
 /* services */
 .services{
   width: 100%;
-  background: #FFFFFF;
 }
+
 .services__container{
   display: flex;
   justify-content: center;
@@ -144,12 +159,14 @@ body {
   text-align: center;
 	height: 1550px;
 }
+
 /* wrapper-title-services */
 .services__wrapper-title{
 	max-height: 197px;
   display: flex;
   flex-direction: column;
 }
+
 .services__title{
   text-align: center;
   align-self: stretch;
@@ -162,11 +179,13 @@ body {
   padding-top: 38px;
   padding-bottom: 20px;
 }
+
 /* sections */
 .services__sections{
 	max-width: 370px; 
   padding: 0 26px;
 }
+
 .services__quote{
   font-family: Source Sans Pro;
   font-weight: 600;
@@ -175,6 +194,7 @@ body {
   margin: 0;
   max-width: 570px;
 }
+
 .services__subtitle{
   font-family: Poppins;
   font-style: normal;
@@ -185,7 +205,25 @@ body {
   margin: 0;
   padding-top: 13px;
   padding-bottom: 9px;
+
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
 }
+
+.services__subtitle::after{
+  background-color: #C86DD7;
+  display: block;
+  bottom: 10px;
+  content: "";
+  opacity: 0;
+  height: 8px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  transition: all .6s;
+}
+
 .services__description{
   font-family: Source Sans Pro;
   font-style: normal;
@@ -198,26 +236,36 @@ body {
   padding: 0 12px;
   padding-bottom: 32px;
 }
+
 .services__section:hover{
-  background: #FFFFFF;
   box-shadow: 10px 10px 40px 0px #00000019;
   border-radius: 3px;
+  
 }
-.services__section:hover .services__subtitle{
-  text-underline-position: under;
-  text-decoration: underline #C86DD7 8px;
+.services__section{
+  z-index: 0;
+  cursor: pointer;
 }
+.services__section:hover .services__subtitle::after{
+  opacity: 1;
+}
+
 .services__image{
   padding-top: 32px;
 }
+
+
 @media (min-width: 425px){
+
   .image__mobile{
     width: 100%;
   }
+
   .banner__image{
     left: 0;
   }
 }
+
 @media (min-width: 857px){
   /* services */
   .services__container{
@@ -226,15 +274,18 @@ body {
     align-items: center;
     padding-top: 73px;
   }
+
   .services__title {
     font-size: 56px;
     line-height: 64px;
     padding: 0;
     padding-bottom: 23px;
   }
+
   .services__quote{
     margin: 0;
   }
+
   .services__sections{
     flex-wrap: wrap;
     display: flex;
@@ -242,51 +293,61 @@ body {
     align-items: center;
     max-width: 100%;
 		margin: 0;
-    margin-top: 32px;
+    margin-top: 36px;
     margin-bottom: 40px;
     padding: 0;
   }
+
   .services__section{
     text-align: center;
     width: 370px;
     padding-bottom: 32px;
     margin-bottom: 36px;
   }
+
   .services__image, .services__image-consequuntur{
     padding-top: 36px;
   }
+
   .services__description{
     width: 322px;
     height: 50px;
     padding: 0 24px;
   }
 }
+
 @media screen and (min-width: 1190px){
+
   .services__container{
     height: auto;
   }
 }
 /* large devices banner*/
 @media (min-width: 1024px){
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
   }
+
   .banner{
     height: 808px;
     background: url(images/Group8.png);
     background-repeat: no-repeat;
     background-size: 100% 100%; 
   }
+
   .banner__container{
     padding-top: 30px;
   }
+
   .banner__nav{
     background-color: transparent;
     padding: 0;
     max-height: 48px;
   }
+
   .banner__logo{
     height: 31px;
     width: 122px;
@@ -294,6 +355,7 @@ body {
     color: #FFFFFF;
     margin: 0;
   }
+
   .banner__menu{  
     display: flex;
     padding: 0;
@@ -306,26 +368,32 @@ body {
     list-style: none;
     margin: 0;
   }
+
   .menu__item{
     display: flex;
     color: #FFFFFF;
     margin-right: 30px;
     text-decoration: none;
   }
+
   .banner__icon-menu{
     display: none;
   }
+
   .button{
     display: flex;
   }
-  .button--hover:hover{
+
+  .button--contact:hover{
     background-color: #C86DD7;
     transition: .6s;
   }
+
   .banner__wrapper-title{
     max-width: 370px;
     height: 500px;
   }
+
   .banner__title{
     width: 336px;
     margin-top: 120px;
@@ -333,15 +401,18 @@ body {
     font-size: 72px;
     line-height: 72px;
   }
+
   .banner__image{
     display: flex;
     flex: 1;
     margin-top: 60px;
     width: 100%;
   }
+
   .image__mobile{
     width: 100%;
   }
+
   .banner__social-media{
     right: 0;
     left: auto;
