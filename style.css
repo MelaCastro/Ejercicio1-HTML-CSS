@@ -5,11 +5,13 @@ body {
   box-sizing:border-box;
   background: #FFFFFF;;
 }
+
 /* section-banner */
 .container {
   max-width: 100%;
   margin: 0 auto;
 }
+
 .banner{
   display: flex;
   justify-content: space-between;
@@ -21,12 +23,14 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%; 
 }
+
 .banner__container{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex:1;
 }
+
 /* Navegation */
 .banner__nav{
   display: flex;
@@ -37,6 +41,7 @@ body {
   flex-basis: 100%;
   justify-content: space-between;
 }
+
 .banner__logo{
   font-family: Poppins;
   font-style: normal;
@@ -47,6 +52,7 @@ body {
   margin: 0;
   height: 27px;
 }
+
 .button{
   display: flex;
   justify-content: center;
@@ -66,6 +72,7 @@ body {
   font-weight: bold;
   color: #FFFFFF;
 }
+
 .button--explore{
   border-radius: 0px;
   border-color: #FFC300;
@@ -74,11 +81,13 @@ body {
   background-color: #FFC300;
   border-radius: 24px;
 }
+
 .banner__icon-menu{
   display: flex;
   cursor: pointer;
   height: 15px;
 }
+
 /* wrapper-title-banner */
 .banner__wrapper-title{
   display: flex;
@@ -86,6 +95,7 @@ body {
   flex-direction: column;
   margin-left: 14px;
 }
+
 .banner__title{
   width: 100%;
   left: 135px;
@@ -98,6 +108,7 @@ body {
   line-height: 64px;
   color: #FFFFFF;
 }
+
 .banner__quote{
   width: 80%;
   left: 135px;
@@ -108,6 +119,7 @@ body {
   line-height: 24px;
   color: #FFFFFF;
 }
+
 .banner__image{
   position: relative;
   left: 30px;
@@ -119,6 +131,7 @@ body {
 .image__mobile{
   width: 412px
 } 
+
 .banner__social-media{
   width: 100%;
   display: flex;
@@ -128,13 +141,16 @@ body {
   padding-bottom: 48px;
   gap: 8px;
 }
+
 .banner__menu{
   display: none;
 }
+
 /* services */
 .services{
   width: 100%;
 }
+
 .services__container{
   display: flex;
   justify-content: center;
@@ -143,6 +159,7 @@ body {
   text-align: center;
 	height: 1550px;
 }
+
 /* wrapper-title-services */
 .services__wrapper-title{
 	max-height: 208px;
@@ -150,6 +167,7 @@ body {
   flex-direction: column;
   padding-bottom: 36px;
 }
+
 .services__title{
   text-align: center;
   align-self: stretch;
@@ -161,11 +179,13 @@ body {
   margin: 0;
   padding: 38px 0;
 }
+
 /* sections */
 .services__sections{
 	max-width: 500px; 
   padding: 0 26px;
 }
+
 .services__quote{
   font-family: Source Sans Pro;
   font-weight: 600;
@@ -174,6 +194,7 @@ body {
   margin: 0;
   max-width: 570px;
 }
+
 .services__subtitle{
   font-family: Poppins;
   font-weight: bold;
@@ -212,10 +233,12 @@ body {
   padding-bottom: 32px;
   max-width: 402px;
 }
+
 .services__section:hover{
   box-shadow: 10px 10px 40px 0px #00000019;
   border-radius: 3px;
 }
+
 .services__section{
   z-index: 0;
   cursor: pointer;
@@ -228,12 +251,14 @@ body {
 .services__image{
   padding-top: 32px;
 }
+
 /* contact */
 .container-contact {
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
 }
+
 .contact{
   width: 100%;
   background: #FFFFFF;
@@ -241,6 +266,7 @@ body {
   height: auto;
   position: relative;
 }
+
 .contact__container{
   display: flex;
   flex-wrap: wrap;
@@ -248,6 +274,7 @@ body {
   flex-direction: column;
   padding-bottom: 58px;
 }
+
 .contact__wrapper{
   display: flex;
   flex-direction: column;
@@ -258,6 +285,7 @@ body {
   padding-bottom: 64px;
   padding-top: 70px;
 }
+
 .contact__line{
   display: flex;
   flex-wrap: nowrap;
@@ -269,6 +297,7 @@ body {
   bottom: 710px;
   margin: 0;
 }
+
 .contact__title{
   font-family: Poppins;
   font-size: 56px;
@@ -277,6 +306,7 @@ body {
   margin: 0;
   padding-bottom: 24px;
 }
+
 .contact__quote{
   font-family: Source Sans Pro;
   font-weight: 600;
@@ -286,6 +316,7 @@ body {
   max-width: 100%;
   padding-bottom: 32px;
 }
+
 .contact__input{
   font-family: Source Sans Pro;
   font-size: 16px;
@@ -295,15 +326,18 @@ body {
   margin-bottom: 16px;
   border: 1px solid rgba(0, 0, 0, 0.116);
 }
+
 .contact__input:focus{
   outline: 0 none;
 }
+
 .button--send{
   border-radius: 0px;
   border-color: #C86DD7;
   background: #C86DD7;
   border-radius: 24px;
 }
+
 .contact-container__menu{
   display: flex;
   flex-direction: column;
@@ -311,6 +345,7 @@ body {
   margin-top: 21px;
   margin-bottom: 58px;
 }
+
 .contact__menu{
   justify-content: space-between;
   font-family: Source Sans Pro;
@@ -319,9 +354,9 @@ body {
   margin-bottom: 0;
   list-style: none;
   padding-left: 14px;
-  margin-top: 40px;
-  
+  margin-top: 40px; 
 }
+
 .contact-menu__item{
   text-decoration: none;
   color: #333333;
@@ -329,20 +364,24 @@ body {
   line-height: 32px;
   opacity: 0.5;
 }
+
 .contact-menu__item--bold{
   text-decoration: none;
   color: #333333;
   line-height: 32px;
 }
+
 .contact__info{
   display: flex;
   justify-content: end;
   flex-direction: column;
   padding-left: 14px;
 }
+
 .social-media__icon-contact{
   filter: brightness(0) saturate(100%) invert(71%) sepia(27%) saturate(7496%) hue-rotate(235deg) brightness(89%) contrast(88%);
 }
+
 .contact__copyright{
   font-family: Source Sans Pro;
   font-weight: 400;
@@ -351,6 +390,7 @@ body {
   opacity: 0.5;
   color: #333333;
 }
+
 @media (min-width: 425px){
   .image__mobile{
     width: 100%;
@@ -362,11 +402,13 @@ body {
   .contact__quote{
     max-width: 570px;
   }
+
   .contact-container__menu{
     justify-content: flex-start;
     height: auto;
     flex-direction: row;
   }
+
   .contact__menu{
     width: 20%;
     padding-right: 50px;
@@ -382,20 +424,24 @@ body {
     position: relative;
     overflow: hidden;
   }
+
   .banner{
     height: 808px;
     background: url(images/Group8.png);
     background-repeat: no-repeat;
     background-size: 100% 100%; 
   }
+
   .banner__container{
     padding-top: 30px;
   }
+
   .banner__nav{
     background-color: transparent;
     padding: 0;
     max-height: 48px;
   }
+
   .banner__logo{
     height: 31px;
     width: 122px;
@@ -403,6 +449,7 @@ body {
     color: #FFFFFF;
     margin: 0;
   }
+
   .banner__menu{  
     display: flex;
     padding: 0;
@@ -415,26 +462,32 @@ body {
     list-style: none;
     margin: 0;
   }
+
   .menu__item{
     display: flex;
     color: #FFFFFF;
     margin-right: 30px;
     text-decoration: none;
   }
+
   .banner__icon-menu{
     display: none;
   }
+
   .button{
     display: flex;
   }
+
   .button--contact:hover{
     background-color: #C86DD7;
     transition: .6s;
   }
+
   .banner__wrapper-title{
     max-width: 370px;
     height: 500px;
   }
+
   .banner__title{
     width: 336px;
     margin-top: 120px;
@@ -442,20 +495,24 @@ body {
     font-size: 72px;
     line-height: 72px;
   }
+
   .banner__image{
     display: flex;
     flex: 1;
     margin-top: 60px;
     width: 100%;
   }
+
   .image__mobile{
     width: 100%;
   }
+
   .banner__social-media{
     right: 0;
     left: auto;
     justify-content: flex-end;
   }
+
   /* services */
   .services__container{
 		height: auto;
@@ -464,15 +521,18 @@ body {
     padding-top: 71px;
     padding-bottom: 76px;
   }
+
   .services__title {
     font-size: 56px;
     line-height: 64px;
     padding-top: 0;
     padding-bottom: 23px;
   }
+
   .services__quote{
     margin: 0;
   }
+
   .services__sections{
     flex-wrap: wrap;
     display: flex;
@@ -483,21 +543,23 @@ body {
     margin-bottom: 40px;
     padding: 0;
   }
+
   .services__section{
     text-align: center;
     height: 244px;
     width: 370px;
   }
+
   .services__image, .services__image-consequuntur{
     padding-top: 40px;
   }
+
   .services__description{
     max-width: 322px;
     height: 50px;
     margin: 0 auto;
     padding: 0;
-  }
-  
+  } 
 }
 
 /* Medium devices */
@@ -506,50 +568,60 @@ body {
     max-width: 754px;
   }
 }
+
 @media (min-width: 425px){
 .contact__line {
     bottom: 375px;
   }
 }
+
 @media (min-width: 1111px){
   /* contact */
   .contact{
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+
   .contact__container{
     flex-direction: row;
     justify-content: center;
     padding-bottom: 74px;
   }
+
   .contact__quote{
     display: inline-flex;
   }
+
   .contact__input{
     margin: 0;
     margin-right: 30px;
   }
+
   .button--send{
     display: inline-block;
     
   }
+
   .contact__menu{
     padding: 0;
     padding-right: 216px;
     margin: 0;
   }
+
   .contact__line {
     bottom: 254px;
   }
-.contact__wrapper{
+
+  .contact__wrapper{
     display: inline-block;
     padding: 0;
     padding-bottom: 160px;
     padding-top: 135px;
-}
-.contact-container__menu{
+  }
+  
+  .contact-container__menu{
   display: inline-flex;
   padding-top: 53px;
   margin: 0;
-}
   }
+}
