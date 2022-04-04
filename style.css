@@ -597,6 +597,10 @@ body {
     margin-right: 30px;
   }
 
+  .contact__info{
+    padding-left: 0;
+  }
+
   .button--send{
     display: inline-block;
     
