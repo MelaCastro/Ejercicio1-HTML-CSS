@@ -11,37 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>RELAP</title>
   </head>
-  <body> 
-    <div class="banner">                         
+  <body>
+    <div class="banner">
       <div class="banner__container container">  <!--container-->
-        <nav class="banner__nav">                <!--Navegation-->
+        <nav class="banner__nav js-navigation">                <!--Navegation-->
           <h3 class="banner__logo">RELAP</h3>
-          <ul class="banner__menu" >
-            <li>
+          <button class="menu-mobile__cerrar js-button__cerrar">
+            <i class="fas fa-times"></i>
+          </button>
+          <button class="menu-mobile__abrir js-button__abrir">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="banner__menu js-show-menu" >
+            <li class="menu__li">
               <a href="/" class="menu__item">Home</a>
             </li>
-            <li>
+            <li class="menu__li">
               <a href="/" class="menu__item">Features</a>
             </li>
-            <li>
+            <li class="menu__li">
               <a href="/" class="menu__item">Works</a>
             </li>
-            <li>
+            <li class="menu__li">
               <a href="/" class="menu__item">About</a>
             </li>
-            <li>
+            <li class="menu__li">
               <a href="/" class="menu__item"> People</a>
             </li>
-            <li>
-              <a href="/" class="menu__item">New</a>
+            <li class="menu__li">
+              <a href="/" class="menu__item li-final">New</a>
             </li>
+            <div role="button" class=" button button--contact js-show-button js-show-menu ">
+              <a>
+                Contact Us 
+              </a>
+            </div>
           </ul>
-          <a role="button" class="button button--contact">
-              Contact Us
-          </a>
-          <div class="banner__icon-menu">
-            <img src="images/Combined Shape.svg">
-          </div>
         </nav>
         <div class="banner__wrapper-title">      <!--wrapper-title--> 
           <h1 class="banner__title">Omnis Voluptas</h1>
@@ -177,5 +182,7 @@
           </div>
       </div>
     </div>
+    <script src="https://kit.fontawesome.com/789a8d9fba.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
