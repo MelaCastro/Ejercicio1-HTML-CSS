@@ -15,6 +15,7 @@ function mostrarMenu () {
   btn2.classList.add('hide')
   navigation.classList.add('active')
 }
+
 function cerrarMenu() {
   btn1.classList.remove('block')
   btn2.classList.remove('hide')
